@@ -20,3 +20,7 @@
 3. `poetry install`
 4. `pre-commit install`
 5. `docker-compose up`
+
+
+---
+generated with https://github.com/pemukl/python-template
