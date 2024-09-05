@@ -2,6 +2,17 @@
 
 {{ cookiecutter.project_short_description }}
 
+## What you need
+- python3.11 installed
+`brew install python3.11`
+- poetry installed
+`brew install poetry`
+- git installed
+`brew install git`
+- pre-commit installed
+`brew install git`
+- optionally docker and docker-compose installed
+
 ## Getting started
 
 1. Clone the repository
