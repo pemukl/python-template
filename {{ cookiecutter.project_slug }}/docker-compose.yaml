@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  {{ cookiecutter.project_slug }}:
+    image: '{{ cookiecutter.project_slug }}:latest'
+    build:
+      context: .
+    tty: true
