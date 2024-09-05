@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "{{ cookiecutter.project_slug }}"
+version = "0.1.0"
+description = "{{ cookiecutter.project_short_description }}"
+authors = ["{{ cookiecutter.author }} <{{ cookiecutter.email }}>"]
+license = "proprietary"
+packages = [{ include = "{{ cookiecutter.module_name }}" }, ]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+PyYAML = "^6.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.0"
+
+[tool.ruff]
+line-length = 100
+src = [".", "{{ cookiecutter.module_name }}"]
+ignore = ["F401"]
+
+[tool.isort]
+py_version = 311
+line_length = 100
+multi_line_output = 3
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

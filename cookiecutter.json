@@ -1,0 +1,16 @@
+{
+  "project_name": "Python Boilerplate",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "module_name": "{{ cookiecutter.project_slug  }}",
+  "project_short_description": "Simple Python boilerplate with Poetry, Ruff, pre-commit hook and Docker",
+  "author": "Marc Schneider",
+  "email": "marc@shnei.de",
+  "__prompts__": {
+    "author": "What's your [bold yellow]name[/]?",
+    "email": "What's your [bold yellow]email address[/]?",
+    "project_name": "Please provide the [bold yellow]full name of your project[/], as it would appear in a headline",
+    "project_slug": "Please provide a [bold yellow]slug[/], which is the project name as it would appear in a URL, or accept this suggestion",
+    "module_name": "Please provide a [bold yellow]module name[/] for your project. Make it short, if possible, and use underscores instead of whitespace",
+    "project_short_description": "Provide a [bold yellow]short description[/] for the project"
+  }
+}
