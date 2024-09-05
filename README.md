@@ -22,4 +22,4 @@ A fresh python project nicely set up with git, pre-commit code formatting, a doc
 
 ## How you do it
 
-    `cookiecutter https://github.com/pemukl/python-template`
+    cookiecutter https://github.com/pemukl/python-template
