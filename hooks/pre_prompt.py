@@ -26,7 +26,7 @@ if __name__ == "__main__":
     if not check_installation("python3.11"):
         sys.exit(1)
 
-    if not check_installation("poetry"):
+    if not check_installation("pixi"):
         sys.exit(1)
 
     if not check_installation("git"):

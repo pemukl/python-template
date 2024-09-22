@@ -2,7 +2,7 @@
   "project_name": "Python Boilerplate",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "module_name": "{{ cookiecutter.project_slug  }}",
-  "project_short_description": "Simple Python boilerplate with Poetry, Ruff, pre-commit hook and Docker",
+  "project_short_description": "Simple Python boilerplate with Pixi, Ruff, pre-commit hook and Docker",
   "author": "Marc Schneider",
   "email": "marc@shnei.de",
   "__prompts__": {

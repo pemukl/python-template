@@ -1,0 +1,36 @@
+[project]
+authors = ["{{ cookiecutter.author }} {{ cookiecutter.email }}"]
+description = "{{ cookiecutter.project_name }}"
+name = "{{ cookiecutter.module_name }}"
+channels = ["conda-forge"]
+platforms = ["linux-64", "linux-aarch64", "osx-arm64"]
+
+[tasks]
+main = "python -m {{cookiecutter.module_name}}"
+
+[pypi-dependencies]
+{{cookiecutter.module_name}} = { path = ".", editable = true }
+
+[dependencies]
+python = ">=3.11,<4"
+pyyaml = "*"
+python-dotenv = "*"
+loguru = "*"
+
+[feature.test.dependencies]
+pytest = "*"
+
+[feature.test.tasks]
+test = "pytest tests/"
+
+[feature.lint.dependencies]
+ruff = "*"
+
+[feature.lint.tasks]
+lint = "ruff check --fix ."
+
+[environments]
+default = { features = ["test", "lint"], solve-group = "default" }
+test = { features = ["test"], solve-group = "default" }
+lint = { features = ["lint"], solve-group = "default" }
+prod = { features = [], solve-group = "default" }
