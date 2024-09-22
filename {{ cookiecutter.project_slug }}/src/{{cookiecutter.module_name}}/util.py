@@ -4,11 +4,14 @@ from pathlib import Path
 from typing import Any, Dict, Union
 
 import yaml
+from dotenv import load_dotenv
 
-logger = logging.getLogger('{{ cookiecutter.module_name }}')
+load_dotenv()
+
+logger = logging.getLogger('{{cookiecutter.module_name}}')
 
 
-ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir)
+ROOT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), os.pardir, os.pardir)
 
 
 def load_config(config_file: Union[str, Path]) -> Dict[str, Any]:
