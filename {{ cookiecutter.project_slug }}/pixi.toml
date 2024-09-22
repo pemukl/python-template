@@ -12,9 +12,10 @@ main = "python -m {{cookiecutter.module_name}}"
 {{cookiecutter.module_name}} = { path = ".", editable = true }
 
 [dependencies]
-python = ">=3.11,<3.12"
+python = ">=3.11,<4"
 pyyaml = "*"
 python-dotenv = "*"
+loguru = "*"
 
 [feature.test.dependencies]
 pytest = "*"

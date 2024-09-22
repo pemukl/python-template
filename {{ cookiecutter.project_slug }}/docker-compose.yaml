@@ -1,6 +1,10 @@
 services:
   {{ cookiecutter.project_slug }}:
-    image: '{{ cookiecutter.project_slug }}:latest'
+    env_file:
+      - .env
+    environment:
+      - ENV_NAME=prod
+    image: '{{cookiecutter.project_slug}}:latest'
     build:
       context: .
     tty: true
