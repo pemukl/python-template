@@ -5,7 +5,7 @@
 
 ## What you get
 
-A fresh python project nicely set up with git, pre-commit code formatting, a docker config and pixi dependency management set up for you.
+A fresh python project nicely set up with git, pre-commit code formatting, a docker config and pixi dependency management set up for you. You can find an example of how your project will look like here: https://github.com/pemukl/python-template-instance.git
 
 Why pixi? Because it has a project-oriented dependency management similar to poetry but it adds the power of the conda ecosystem, enabling you to install non-python dependencies. https://pixi.sh/v0.26.1/switching_from/poetry/
 
