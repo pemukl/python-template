@@ -19,8 +19,11 @@
 1. Clone the repository
 2. Navigate to the cloned project directory: `cd {{cookiecutter.project_slug}}`
 3. `pixi install`
-4. `pre-commit install`
-5. `docker-compose up`
+4. `pixi run main`
+5. `pixi run lint`
+6. `pixi run test`
+7. `pre-commit install`
+8. `docker-compose up`
 
 ---
 
