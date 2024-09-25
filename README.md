@@ -16,13 +16,15 @@ Why pixi? Because it has a project-oriented dependency management similar to poe
 - git installed
   `brew install git`
 - pre-commit installed
-  `brew install git`
+  `brew install pre-commit`
 - cookiecutter installed
   `brew install cookiecutter`
-- optionally docker and docker-compose installed
+- optionally docker (or [Orbstack](https://orbstack.dev/) 😉) and docker-compose installed
 
 ## How you do it
 
 Just run the following command to start a new project in the current directory.
 
     cookiecutter https://github.com/pemukl/python-template
+
+Credits: Thanks to the team at [at] for showing me cookiecutter via [their template](https://github.com/at-gmbh/at-python-template).
